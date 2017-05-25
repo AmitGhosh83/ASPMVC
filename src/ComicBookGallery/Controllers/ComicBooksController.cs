@@ -9,11 +9,9 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBooksController: Controller
     {
-        
-
         public ActionResult Detail()
         {
-            var comicBook = new ComicBook()
+            var ComicBook = new ComicBook()
             {
                 SeriesTitle = "The Amazing Spiderman",
                 IssueNumber = 700,
@@ -25,13 +23,11 @@ namespace ComicBookGallery.Controllers
                     new Artist(){Name="Victor Olazaba", Role="Inks"},
                     new Artist(){Name="Edgar Delgado", Role="Colors"},
                     new Artist(){Name="Chris Eliopoulos", Role="Letters"},
-                }
-            
-
-
+                },
             };
-          
-            return View(comicBook);
+
+            
+            return View(ComicBook);
         }
     }
 
